@@ -1,24 +1,69 @@
 import React from 'react';
-
+import File from './file'
 import './App.css';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-    
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+     <File
+      title = "Color Me Box"
+      subtitle = "Adventure Awaits!!"
+      information = "Shows different arrays of color"
+      color = "blue"
+      />
+      <File
+      title = "Color Me Box"
+      subtitle = "Adventure Awaits!!"
+      information = "Shows different arrays of color"
+      color = "red"
+      />
+      <File
+      title = "Color Me Box"
+      subtitle = "Adventure Awaits!!"
+      information = "Shows different arrays of color"
+      color = "yellow"
+      />
+       <File
+      title = "Color Me Box"
+      subtitle = "Adventure Awaits!!"
+      information = "Shows different arrays of color"
+      color = "orange"
+      />
+       <File
+      title = "Color Me Box"
+      subtitle = "Adventure Awaits!!"
+      information = "Shows different arrays of color"
+      color = "green"
+      />
+       <File
+      title = "Color Me Box"
+      subtitle = "Adventure Awaits!!"
+      information = "Shows different arrays of color"
+      color = "purple"
+      />
+       <File
+      title = "Color Me Box"
+      subtitle = "Adventure Awaits!!"
+      information = "Shows different arrays of color"
+      color = "brown"
+      /> <File
+      title = "Color Me Box"
+      subtitle = "Adventure Awaits!!"
+      information = "Shows different arrays of color"
+      color = "pink"
+      /> <File
+      title = "Color Me Box"
+      subtitle = "Adventure Awaits!!"
+      information = "Shows different arrays of color"
+      color = "lightblue"
+      />
+       <File
+      title = "Color Me Box"
+      subtitle = "Adventure Awaits!!"
+      information = "Shows different arrays of color"
+      color = "lightgreen"
+      />
+      
     </div>
   );
 }
