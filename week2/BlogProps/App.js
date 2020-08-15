@@ -9,7 +9,7 @@ import Header from "./Header";
 import BlogList from "./BlogList";
 import Footer from "./Footer"
 
-function Appjs() {
+function App() {
   return (
     <div id="wrapper">
       <Header className="Header" />
