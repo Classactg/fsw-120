@@ -32,43 +32,26 @@ diceRoll = numberOfDice => {
   })
 }
 buildDice = (roll) => {
-  let imageUrl = ""
-  if (roll === 1) {
-  imageUrl = "https://raw.githubusercontent.com"
-}
-  else if (roll === 2){
-  imageUrl = "https://raw.githubusercontent.com"
-}
-  else if (roll === 3){
-  imageUrl = "https://raw.githubusercontent.com"
-}
-  else if (roll === 4){
-  imageUrl = "https://raw.githubusercontent.com"
-}
-  else if (roll === 5){
-  imageUrl = "https://raw.githubusercontent.com"
-}
-  else if (roll === 6){
-  imageUrl = "https://raw.githubusercontent.com"
-}
-return (
-  <img
-  className = "dice-images"
-  source = {imageUrl}
-  alt = "dice"/>
-)
+  let imageUrl = roll
+
+return (<div>{imageUrl}
+
+</div>)
 }
 
-render() {
+render() {let color = "yellow"
+if (this.state.numberOfDice === 1){color = "red"}
+else if (this.state.numberOfDice === 2){color = "green"}
+else if (this.state.numberOfDice === 3){color = "black"}
+else if (this.state.numberOfDice === 4){color = "purple"}
+else if (this.state.numberOfDice === 5){color = "blue"}
   return(
     <div className = "App" >
-      <h1>High Roller!</h1>
+      <h1 style={{color}}>High Roller!</h1>
       {
         [1, 2, 3, 4, 5,].map(number => {
           let text = number === 1 ? "die" : "dice"; 
           return(
-            <button key = {number} onClick = {()=> this.diceRoll(number=5)}
-            className="btn-all">Roll All</button>,
             <button key = {number} onClick = {()=> this.diceRoll(number)}
             className="button">{number} {text}</button>
           )
