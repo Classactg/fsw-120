@@ -32,10 +32,29 @@ diceRoll = numberOfDice => {
   })
 }
 buildDice = (roll) => {
-  let imageUrl = roll
-
-return (<div>{imageUrl}
-
+  let imageUrl;
+  if (roll === 1) {
+  imageUrl = "https://raw.githubusercontent.com/Classactg/fsw-120/master/week3/RollingDice/src/components/dice%201.jpg"
+}
+  else if (roll === 2){
+  imageUrl = "https://raw.githubusercontent.com/Classactg/fsw-120/master/week3/RollingDice/src/components/dice%202.jpg"
+}
+  else if (roll === 3){
+  imageUrl = "https://raw.githubusercontent.com/Classactg/fsw-120/master/week3/RollingDice/src/components/dice%203.jpg"
+}
+  else if (roll === 4){
+  imageUrl = "https://raw.githubusercontent.com/Classactg/fsw-120/master/week3/RollingDice/src/components/dice%204.jpg"
+}
+  else if (roll === 5){
+  imageUrl = "https://raw.githubusercontent.com/Classactg/fsw-120/master/week3/RollingDice/src/components/dice%205.jpg"
+}
+  else if (roll === 6){
+  imageUrl = "https://raw.githubusercontent.com/Classactg/fsw-120/master/week3/RollingDice/src/components/dice%206.jpg"
+}
+return (<div>{roll}
+  <img
+  className = "dice-images"
+  src = {imageUrl}/>
 </div>)
 }
 
