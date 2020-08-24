@@ -1,3 +1,4 @@
+import React from 'react';
 const BadgeCard = ({
     index,
     firstName,
@@ -6,8 +7,8 @@ const BadgeCard = ({
     placeOfBirth,
     phoneNumber,
     favoriteFood,
-    textarea,
-    handleDelete
+    textArea,
+    handleDelete=() => {},
    
 }) => {
     return(
@@ -18,8 +19,8 @@ const BadgeCard = ({
             <h3>{'Place Of Birth:'}{placeOfBirth}</h3>
             <h3>{'Phone Number:'}{phoneNumber}</h3>
             <h3>{'Favorite Food:'}{favoriteFood}</h3>
-            <textarea>{textarea}</textarea>
-            <button onClick={()=> HandleDelete(index)}>Delete this one</button>
+            <textArea>{textArea}</textArea>
+            {/* <button onClick={()=> HandleDelete(index)}>Delete this one</button> */}
         </div>
     )
 }

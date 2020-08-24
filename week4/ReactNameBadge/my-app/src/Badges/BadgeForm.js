@@ -9,7 +9,7 @@ class BadgeForm extends Component {
             placeOfBirth:"",
             phoneNumber:"",
             favoriteFood:"",
-            textarea:"",
+            textArea:"",
             nameBadges:[],
         }
     }
@@ -26,7 +26,7 @@ class BadgeForm extends Component {
             placeOfBirth:this.state.placeOfBirth,
             phoneNumber:this.state.phoneNumber,
             favoriteFood:this.state.favoriteFood,
-            textarea:this.state.textarea,
+            textArea:this.state.textArea,
         }
         this.setState({
             nameBadges:[newUserData,...this.state.nameBadges],
@@ -36,9 +36,10 @@ class BadgeForm extends Component {
             placeOfBirth:"",
             phoneNumber:0,
             favoriteFood:"",
-            textarea:"",
+            textArea:"",
 
         })
+        this.props.addOne(newUserData)
     }
 render() {
 
@@ -46,7 +47,7 @@ render() {
 return (
     <div>
       <form>
-          <h1>Badge Card Template</h1>
+          <h1>Badge Card</h1>
         <input 
           placeholder="First Name"
           type="text" 
@@ -61,7 +62,7 @@ return (
           value={this.state.lastName}
           onChange={this.handleChange}
           required={true}/>
-          <h1>Badge Card Template</h1>
+          {/* <h1>Badge Card</h1> */}
         <input 
           placeholder="email"
           type="text" 
@@ -72,34 +73,34 @@ return (
            <input 
           placeholder="Place Of Birth"
           type="text" 
-          name="Place Of Birth"
+          name="placeOfBirth"
           value={this.state.placeOfBirth}
           onChange={this.handleChange}
           required={true}/>
            <input 
           placeholder="Phone Number"
           type="text" 
-          name="Phone Number"
+          name="phoneNumber"
           value={this.state.phoneNumber}
           onChange={this.handleChange}
           required={true}/>
            <input 
           placeholder="Favorite Food"
           type="text" 
-          name="Favorite Food"
+          name="favoriteFood"
           value={this.state.favoriteFood}
           onChange={this.handleChange}
           required={true}/>
            <textarea 
           placeholder="Text Area"
           type="text" 
-          name="Text Area"
+          name="textArea"
           value={this.state.textArea}
           onChange={this.handleChange}
           required={true}/>
           <button onClick={this.handleSubmit}>Click Me</button>
         </form>
-         <h1>{this.state.firstName}</h1>
+         {/* <h1>{this.state.firstName}</h1> */}
     </div>
   )}}
 
