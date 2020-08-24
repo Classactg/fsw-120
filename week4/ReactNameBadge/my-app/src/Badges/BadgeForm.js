@@ -40,8 +40,9 @@ class BadgeForm extends Component {
 
         })
     }
-}
-render
+render() {
+
+
 return (
     <div>
       <form>
@@ -57,7 +58,7 @@ return (
           placeholder="Last Name"
           type="text" 
           name="lastName"
-          value={this.state.firstName}
+          value={this.state.lastName}
           onChange={this.handleChange}
           required={true}/>
           <h1>Badge Card Template</h1>
@@ -65,37 +66,41 @@ return (
           placeholder="email"
           type="text" 
           name="email"
-          value={this.state.firstName}
+          value={this.state.email}
           onChange={this.handleChange}
           required={true}/>
            <input 
           placeholder="Place Of Birth"
           type="text" 
           name="Place Of Birth"
-          value={this.state.firstName}
+          value={this.state.placeOfBirth}
           onChange={this.handleChange}
           required={true}/>
            <input 
           placeholder="Phone Number"
           type="text" 
           name="Phone Number"
-          value={this.state.firstName}
+          value={this.state.phoneNumber}
           onChange={this.handleChange}
           required={true}/>
            <input 
           placeholder="Favorite Food"
           type="text" 
           name="Favorite Food"
-          value={this.state.firstName}
+          value={this.state.favoriteFood}
           onChange={this.handleChange}
           required={true}/>
-           <input 
+           <textarea 
           placeholder="Text Area"
           type="text" 
           name="Text Area"
-          value={this.state.firstName}
+          value={this.state.textArea}
           onChange={this.handleChange}
           required={true}/>
+          <button onClick={this.handleSubmit}>Click Me</button>
         </form>
+         <h1>{this.state.firstName}</h1>
     </div>
-  )
+  )}}
+
+  export default BadgeForm
