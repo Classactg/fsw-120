@@ -1,0 +1,55 @@
+.Wrapper {
+    position: flex;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    z-index: 99;
+}
+
+.NavLink {
+    display: inline;
+    margin: 20px;
+    color: #000;
+    text-decoration: none;
+
+}
+.about {
+    position: flex;
+    align-items: center;
+    font-size: 50px;
+    font-family: fantasy;
+
+}
+.services {
+    position: flex;
+    align-items: center;
+    font-size: 50px;
+    font-family: fantasy;
+}
+.footer {
+    position: absolute;
+    margin: 0;
+    left: 0;
+    top: 80%;
+    height: 90px;
+    width: 100%;
+    background-color: whitesmoke;
+    text-align: center;
+  
+
+}
+.tools {
+    position: flex;
+    text-align: center;
+   
+
+}
+.NavBar {
+    display: inline;
+    margin: 20px;
+    color: #000;
+    text-decoration: none;
+}
